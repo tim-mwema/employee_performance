@@ -11,7 +11,7 @@ st.title("Performance Rating Classifier")
 st.write("Enter  value scores of the following areas for the employee to predict performance")
 EmplEmpEnvironmentSatisfaction=st.number_input("Environment Satisfaction level(1=low,2=medium,3=high,4=very high)",min_value=1.0,max_value=4.0,step=1.0)
 EmpLastSalaryHikePercent=st.number_input("Previous Percent salary added",min_value=1.0,max_value=30.0,step=1.0)
-EmpWorkLifeBalance=st.number_input("Worklife Balance score(1=low,2=medium,3=high,4=very high)",min_value=1.0,max_value=4.0,step=1.0)
+EmpWorkLifeBalance=st.number_input("Work-life Balance score(1=bad,2=good,3=better,4= best)",min_value=1.0,max_value=4.0,step=1.0)
 
 if st.button("Predict"):
     input_features=np.array([[EmplEmpEnvironmentSatisfaction,EmpLastSalaryHikePercent,EmpWorkLifeBalance]])
